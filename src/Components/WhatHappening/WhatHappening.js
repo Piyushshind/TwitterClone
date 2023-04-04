@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState , useEffect } from "react";
 import style from "./whatHappening.module.css";
 import { FaGlobe, FaImage, FaMapMarker } from "react-icons/fa";
 import { FiCamera } from "react-icons/fi";
@@ -6,7 +6,7 @@ import { CgSmileMouthOpen } from "react-icons/cg";
 import { BiUserCircle } from "react-icons/bi";
 import CustomButton from "../../Atom/Button/CustomButton";
 import { tweetPosts } from "../../ConstData/ConstData";
-import { useEffect } from "react";
+
 import { useRecoilState,useRecoilValue, useSetRecoilState } from "recoil";
 
 import { isTweetPost,Personaltweet,forLocalStorageIndex,countForTweet } from "../../Recoil/Atom1/Atom";
